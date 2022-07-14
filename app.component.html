@@ -1,0 +1,217 @@
+<nav id='nav1' class=" navbar navbar-expand-lg navbar-light ">
+  <div class="container-fluid ">
+    <svg xmlns="http://www.w3.org/2000/svg" id="one" idth="30" height="30" fill="currentColor"
+      data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button" class="bi bi-list  "
+      viewBox="0 0 17 17">
+      <path fill-rule="evenodd"
+        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+    </svg>
+    <a class="navbar-brand" id="one1" float="left" href="#">HINOPAK VMS</a>
+    <a id="one2" class="collapse navbar-collapse navbar-brand" href="#">Registration</a>
+    <i class="bi bi-box-arrow-right navbar-brand"></i>
+
+    <!-- <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <span></span>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div> -->
+  </div>
+</nav>
+
+
+
+<div  class="offcanvas offcanvas-start w-25" tabindex="-1" id="offcanvas" data-bs-keyboard="false"
+  data-bs-backdrop="false">
+  <div class="offcanvas-header">
+    <h4 class="offcanvas-title d-none d-sm-block" id="offcanvas">Menu</h4>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div id="menu" class="offcanvas-body py-4 px-2">
+    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu">
+      <li class="nav-item">
+        <a href="#" class="nav-link text-truncate">
+          <i class="fs-5 bi-house"></i><span class="ms-1 d-none d-sm-inline">Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link text-truncate">
+          <i class="fs-5 bi-speedometer2"></i><span class="ms-1 d-none d-sm-inline">Dashboard</span> </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link text-truncate">
+          <i class="fs-5 bi-table"></i><span class="ms-1 d-none d-sm-inline">New Appointment</span></a>
+      </li>
+      <li>
+        <a href="#" class="nav-link text-truncate">
+          <i class="bi bi-list-ol"></i><span class="ms-1 d-none d-sm-inline">Visitor List</span></a>
+      </li>
+      <li>
+        <a href="#" class="nav-link text-truncate">
+          <i class="fs-5 bi-grid"></i><span class="ms-1 d-none d-sm-inline">Pre Registration</span></a>
+      </li>
+      <li>
+        <a href="#" class="nav-link text-truncate">
+          <i class="bi bi-bar-chart-fill"></i><span class="ms-1 d-none d-sm-inline">Reports</span> </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link text-truncate">
+          <i class="bi bi-box-arrow-right"></i><span class="ms-1 d-none d-sm-inline">Log Out</span> </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="container-fluid2">
+  <div class="row">
+    <div class="col min-vh-100 p-4">
+
+
+      <div class="container">
+        <form action="/action_page.php">
+          <div class="row">
+            <div class="col-25">
+              <label for="EmployeeName">Employee Name:</label><br>
+            </div>
+            <div class="col-75">
+              <input type="text" placeholder="Enter Employee Name" formControlName="EmployeeName" class="form-control"
+                />
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label>Employee ID:</label>
+            </div>
+            <div class="col-75">
+              <input type="number" placeholder="Enter Employee ID" formControlName="EmployeeID" class="col-85"
+                 />
+              <!-- <div *ngIf="submitted && f['Visit ID'].errors" class="invalid-feedback">
+                <div *ngIf="f['Visit ID'].errors['required']">Visit ID is required</div>
+              </div> -->
+
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Employee Designation:</label>
+            </div>
+            <div class="col-75">
+              <input type="text" placeholder="Enter Employee Designation" formControlName="EmployeeDesignation"
+                class="form-control"  />
+              <!-- <div *ngIf="submitted && f['Organization Name'].errors" class="invalid-feedback">
+                <div *ngIf="f['Organization Name'].errors['required']">Organization Name is required</div>
+              </div> -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="country">Employee Department Name:</label>
+            </div>
+            <div class="col-75">
+              <select id="country" name="EmployeeDepartmentName">
+                <option value="australia">I.T</option>
+                <option value="canada">Finance</option>
+                <option value="usa">Marketing</option>
+                <option value="usa">HR</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Visitor Name:</label>
+            </div>
+            <div class="col-75">
+              <input type="text" placeholder=" Enter Visitor Name" formControlName="VisitorName" class="form-control"
+              />
+              <!-- <div *ngIf="submitted && f['Person to Visit Name'].errors" class="invalid-feedback"> -->
+                <!-- <div *ngIf="f['Person to Visit Name'].errors['required']">Person to Visit Name</div> -->
+              <!-- </div> -->
+            </div>
+          </div>
+          
+
+          <div class="row">
+            <div class="col-25">
+              <label>Employee CNIC Number:</label>
+            </div>
+            <div class="col-75">
+              <input type="number" placeholder="Enter Employee CNIC Number" formControlName="EmployeeCNICNumber" class="form-control"
+                />
+              <!-- <div *ngIf="submitted && f['CNIC Number'].errors" class="invalid-feedback">
+                <div *ngIf="f['CNIC Number'].errors['required']">CNIC Number is required</div>
+              </div> -->
+
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label>Visitor Contact Number:</label>
+            </div>
+            <div class="col-75">
+              <input type="number" placeholder="Enter Visitor Contact Number" formControlName="VisitorContactNumber:"
+                class="form-control"  />
+              <!-- <div *ngIf="submitted && f['Contact Number'].errors" class="invalid-feedback">
+                <div *ngIf="f['Contact Number'].errors['required']">Contact Number is required</div>
+              </div> -->
+
+
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Purpose:</label>
+            </div>
+            <div class="col-75">
+              <input type="text" placeholder="Enter Purpose" formControlName="EnterPurpose" class="form-control"
+                 />
+              <!-- <div *ngIf="submitted && f['Purpose'].errors" class="invalid-feedback">
+                <div *ngIf="f['Purpose'].errors['required']">Person to Visit Name</div>
+              </div> -->
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-25">
+              <label for="appt">Check In time:</label>
+            </div>
+            <div class="col-75">
+              <input type="time" id="appt" name="appt">
+            </div>
+          </div>
+          <!-- <div class="row">
+            <div class="col-25">
+              <label for="appt">Check Out time:</label>
+            </div>
+            <div class="col-75">
+              <input type="time" id="appt" name="appt">
+            </div>
+          </div> -->
+          <!-- <div class="row"> -->
+            <div class="col-25">
+              <label>Gender:</label>
+            </div>
+            <div class="col-75"></div>
+            <input type="radio" value="male" name="gender" > Male
+            <input type="radio" value="female" name="gender"> Female
+          <!-- </div> -->
+
+          <div class="form-group">
+            <button type="register" class="btn btn-primary">Register</button>
+            <button type="reset"  class="btn btn-warning float-right">
+              Reset
+            </button>
+          </div>
+
+
+
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
